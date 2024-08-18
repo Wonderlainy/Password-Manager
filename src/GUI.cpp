@@ -283,6 +283,7 @@ void GUI::draw() {
         ImGui::Text("Are you sure that you want to delete this entry?");
         if(ImGui::Button("Yes")) {
             passwords.erase(passwords.begin() + selected);
+            kernelModified = true;
             sureToDelete = false;
         }
         ImGui::SameLine();
