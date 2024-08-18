@@ -1,0 +1,10 @@
+^C:\USERS\RRSS9\DESKTOP\TODO-LIST\EXTERNAL\GLFW-3.4\BUILD\CMAKEFILES\5B990A4D5B45FDD2892EDC13E15CD807\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rrss9/Desktop/TODO-List/external/glfw-3.4 -BC:/Users/rrss9/Desktop/TODO-List/external/glfw-3.4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/rrss9/Desktop/TODO-List/external/glfw-3.4/build/GLFW.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
